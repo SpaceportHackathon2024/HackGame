@@ -60,5 +60,5 @@ AssetOrigin:
   productId: 32790
   packageName: Earth like Planets
   packageVersion: 1.0
-  assetPath: Assets/EarthSimplePlanets/PostProcessing/Textures/LUTs/NeutralLUT_32.png
+  assetPath: Assets/3rd_Party/EarthSimplePlanets/PostProcessing/Textures/LUTs/NeutralLUT_32.png
   uploadId: 227257

@@ -62,5 +62,5 @@ AssetOrigin:
   productId: 32790
   packageName: Earth like Planets
   packageVersion: 1.0
-  assetPath: Assets/EarthSimplePlanets/PostProcessing/Editor Resources/UI/MotionBlendingIcon.png
+  assetPath: Assets/3rd_Party/EarthSimplePlanets/PostProcessing/Editor Resources/UI/MotionBlendingIcon.png
   uploadId: 227257

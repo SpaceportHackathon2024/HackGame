@@ -62,5 +62,6 @@ AssetOrigin:
   productId: 32790
   packageName: Earth like Planets
   packageVersion: 1.0
-  assetPath: Assets/EarthSimplePlanets/PostProcessing/Textures/Spectral LUTs/SpectralLut_RedBlue.tga
+  assetPath: Assets/3rd_Party/EarthSimplePlanets/PostProcessing/Textures/Spectral
+    LUTs/SpectralLut_RedBlue.tga
   uploadId: 227257

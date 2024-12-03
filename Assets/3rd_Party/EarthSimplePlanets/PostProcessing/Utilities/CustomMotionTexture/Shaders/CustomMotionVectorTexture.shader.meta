@@ -12,5 +12,5 @@ AssetOrigin:
   productId: 32790
   packageName: Earth like Planets
   packageVersion: 1.0
-  assetPath: Assets/EarthSimplePlanets/PostProcessing/Utilities/CustomMotionTexture/Shaders/CustomMotionVectorTexture.shader
+  assetPath: Assets/3rd_Party/EarthSimplePlanets/PostProcessing/Utilities/CustomMotionTexture/Shaders/CustomMotionVectorTexture.shader
   uploadId: 227257

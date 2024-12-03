@@ -15,5 +15,5 @@ AssetOrigin:
   productId: 32790
   packageName: Earth like Planets
   packageVersion: 1.0
-  assetPath: Assets/EarthSimplePlanets/PostProcessing/Runtime/Models/DitheringModel.cs
+  assetPath: Assets/3rd_Party/EarthSimplePlanets/PostProcessing/Runtime/Models/DitheringModel.cs
   uploadId: 227257
