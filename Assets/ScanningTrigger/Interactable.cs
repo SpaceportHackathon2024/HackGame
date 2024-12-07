@@ -4,7 +4,7 @@ public class Interactable : MonoBehaviour
 {
     public string interactionText;
 
-    public void Interact()
+    public virtual void Interact()
     {
         Debug.Log("Interacted with: " + gameObject.name);
     }

@@ -1,6 +1,8 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
@@ -12,6 +14,12 @@ public class PlayerInteraction : MonoBehaviour
 
     private Interactable currentInteractable;
 
+    InputAction interactAction;
+    void Start()
+    {
+        interactAction=InputSystem.actions.FindAction("Interact");
+        Debug.Log(interactAction);
+    }
     void Update()
     {
         DetectInteractable();
@@ -22,7 +30,6 @@ public class PlayerInteraction : MonoBehaviour
     {
         Collider[] colliders = Physics.OverlapSphere(player.position, interactionRadius);
         currentInteractable = null;
-        Debug.Log(colliders.Count());
 
         foreach (var collider in colliders)
         {
@@ -36,7 +43,6 @@ public class PlayerInteraction : MonoBehaviour
 
         if (currentInteractable != null)
         {
-            Debug.Log("Interactable found: " + currentInteractable.gameObject.name);
             interactionUI.SetActive(true); // Show the UI
             interactionTextUI.text = currentInteractable.interactionText; // Set the unique text
         }
@@ -48,7 +54,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void HandleInteraction()
     {
-        if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
+        if (currentInteractable != null && interactAction!=null && interactAction.IsPressed())
         {
             currentInteractable.Interact();
         }

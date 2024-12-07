@@ -1,7 +1,9 @@
 using UnityEngine;
 
-public class Scanning : MonoBehaviour
+public class Scanning : Interactable
 {
+    public GameObject scanningLevelComponent;
+    public int Level;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,8 +16,10 @@ public class Scanning : MonoBehaviour
         
     }
 
-    public void Interact()
+    public override void Interact()
     {
-        Debug.Log("Scanning");
+        ScanningLevelManager scanningLevelManager = scanningLevelComponent.GetComponent<ScanningLevelManager>();
+        Debug.Log(2);
+        scanningLevelManager.StartLevel(Level);
     }
 }
