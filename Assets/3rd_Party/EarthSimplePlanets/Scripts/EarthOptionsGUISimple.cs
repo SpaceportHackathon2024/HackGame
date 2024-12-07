@@ -15,23 +15,23 @@ public class EarthOptionsGUISimple : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		cloudsTransform = GameObject.FindGameObjectWithTag("Earth Clouds");
-		cloudRotationScript = cloudsTransform.GetComponent<CloudRotation>();
-		generalUIScript = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<GeneralUI> ();
+		//cloudsTransform = GameObject.FindGameObjectWithTag("Earth Clouds");
+		//cloudRotationScript = cloudsTransform.GetComponent<CloudRotation>();
+		//generalUIScript = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<GeneralUI> ();
 	}
 
 	void Update()
 	{
 		transform.Rotate(new Vector3(0, Time.deltaTime * earthRotationSpeed, 0));
 
-		if ((int)cloudType != (int)currentSelectedCloud) {
-			var selectedCloudMaterial = generalUIScript.cloudMaterials[(int)cloudType];	
-			var selectedCloudShadowMaterial = generalUIScript.cloudShadowMaterials[(int)cloudType];
-			GameObject.Find("Clouds/Clouds").GetComponent<Renderer>().material = selectedCloudMaterial;
-			GameObject.Find("Clouds/CloudsOuter").GetComponent<Renderer>().material = selectedCloudShadowMaterial;		
+		//if ((int)cloudType != (int)currentSelectedCloud) {
+		//	var selectedCloudMaterial = generalUIScript.cloudMaterials[(int)cloudType];	
+		//	var selectedCloudShadowMaterial = generalUIScript.cloudShadowMaterials[(int)cloudType];
+		//	GameObject.Find("Clouds/Clouds").GetComponent<Renderer>().material = selectedCloudMaterial;
+		//	GameObject.Find("Clouds/CloudsOuter").GetComponent<Renderer>().material = selectedCloudShadowMaterial;		
 
-			currentSelectedCloud = (int)cloudType;
-		} 
+		//	currentSelectedCloud = (int)cloudType;
+		//} 
 
 	}
 
