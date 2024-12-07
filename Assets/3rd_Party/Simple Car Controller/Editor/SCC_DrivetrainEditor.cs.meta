@@ -15,5 +15,5 @@ AssetOrigin:
   productId: 258020
   packageName: Simple Car Controller
   packageVersion: 1.0
-  assetPath: Assets/Simple Car Controller/Editor/SCC_DrivetrainEditor.cs
+  assetPath: Assets/3rd_Party/Simple Car Controller/Editor/SCC_DrivetrainEditor.cs
   uploadId: 593998
