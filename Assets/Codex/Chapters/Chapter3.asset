@@ -13,10 +13,6 @@ MonoBehaviour:
   m_Name: Chapter3
   m_EditorClassIdentifier: 
   Title: Test 3
-  Content: Fusce risus mauris, convallis in gravida et, facilisis at nibh. Pellentesque
-    vitae semper libero. Pellentesque condimentum mauris sapien, eget rutrum tortor
-    fringilla sit amet. In laoreet velit magna, quis feugiat elit vestibulum vel.
-    Nullam a nisl et felis mattis maximus. Ut tempus finibus sem, at iaculis orci
-    euismod eu. Donec eu eros risus.
-  ChapterImage: {fileID: 21300000, guid: 0c0e6b360c555594796341cefe519995, type: 3}
+  Content: e010fbb8d23a8792a50b701ae9882c22d22ddae4a141328da24120c2791071d0
+  ChapterImage: {fileID: 0}
   IsUnlocked: 0

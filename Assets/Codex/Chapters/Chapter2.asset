@@ -23,5 +23,5 @@ MonoBehaviour:
     nec, imperdiet orci. Quisque lobortis, lectus quis pharetra condimentum, lectus
     lectus hendrerit orci, a tempus justo lacus vitae nisi. Nunc luctus leo id iaculis
     sagittis. Morbi nec fringilla nulla.
-  ChapterImage: {fileID: 21300000, guid: c3bd7f2e465bb4f44bab8cfaa9852287, type: 3}
+  ChapterImage: {fileID: 21300000, guid: 18e345b994163f947997975266a26062, type: 3}
   IsUnlocked: 1
