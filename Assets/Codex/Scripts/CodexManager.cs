@@ -74,7 +74,7 @@ public class CodexManager : MonoBehaviour
                 var text = newButton.GetComponentInChildren<TextMeshProUGUI>();
                 if (text != null)
                 {
-                    text.text = "_ _ _ _";
+                    text.text = "[Unlocked data]";
                     //chapter.Content = "e010fbb8d23a8792a50b701ae9882c22d22ddae4a141328da24120c2791071d0";
                     //chapter.ChapterImage = LockedImg;
                 }
