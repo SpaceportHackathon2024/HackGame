@@ -19,10 +19,10 @@ namespace MeetAndTalk
         public TextMeshProUGUI textBox;
         [Space()]
         public GameObject dialogueCanvas;
-        public Slider TimerSlider;
-        public GameObject SkipButton;
-        public GameObject SpriteLeft;
-        public GameObject SpriteRight;
+        //public Slider TimerSlider;
+        //public GameObject SkipButton;
+        //public GameObject SpriteLeft;
+        //public GameObject SpriteRight;
 
         [Header("Dynamic Dialogue UI")]
         public GameObject ButtonPrefab;
@@ -44,8 +44,8 @@ namespace MeetAndTalk
             if (Instance == null) Instance = this;
 
             // Free Version Only
-            SpriteLeft.SetActive(false);
-            SpriteRight.SetActive(false);
+            //SpriteLeft.SetActive(false);
+            //SpriteRight.SetActive(false);
         }
 
         private void Update()
@@ -81,7 +81,7 @@ namespace MeetAndTalk
                 btn.GetComponent<Button>().onClick.AddListener(_unityActions[i]);
             }
 
-            TimerSlider.gameObject.SetActive(showTimer);
+            //TimerSlider.gameObject.SetActive(showTimer);
         }
 
     }

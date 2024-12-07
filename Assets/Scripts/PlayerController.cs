@@ -43,20 +43,22 @@ namespace MeetAndTalk.Demo
                 Cursor.visible = true;
             }
 
-            if (interactionGameObject != null && Input.GetKeyDown(KeyCode.E))
+            if (interactionGameObject != null /*&& Input.GetKeyDown(KeyCode.E)*/)
             {
                 interactionGameObject.transform.SendMessage("Interaction", SendMessageOptions.DontRequireReceiver);
+                //InteractionUI.SetActive(false);
+                interactionGameObject.gameObject.SetActive(false);
             }
 
             Lanuage.text = $"Language:\n<size=64>{Localization.LocalizationManager.Instance.SelectedLang()}";
-            if (Input.GetKeyDown(KeyCode.U))
-            {
-                Localization.LocalizationManager.Instance.selectedLang = SystemLanguage.English;
-            }
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                Localization.LocalizationManager.Instance.selectedLang = SystemLanguage.Polish;
-            }
+            //if (Input.GetKeyDown(KeyCode.U))
+            //{
+            //    Localization.LocalizationManager.Instance.selectedLang = SystemLanguage.English;
+            //}
+            //if (Input.GetKeyDown(KeyCode.P))
+            //{
+            //    Localization.LocalizationManager.Instance.selectedLang = SystemLanguage.Polish;
+            //}
         }
 
         public void OnTriggerEnter(Collider other)
@@ -65,7 +67,7 @@ namespace MeetAndTalk.Demo
             {
                 interactionGameObject = other.gameObject;
 
-                InteractionUI.SetActive(true);
+                //InteractionUI.SetActive(false);
                 InteractionText.text = other.gameObject.GetComponent<DemoInteraction>().InteractionText;
             }
         }
@@ -74,7 +76,7 @@ namespace MeetAndTalk.Demo
         {
             if (other.gameObject.GetComponent<DemoInteraction>() != null && Interactable)
             {
-                InteractionUI.SetActive(false);
+                //InteractionUI.SetActive(false);
                 interactionGameObject = null;
             }
         }
