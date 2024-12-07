@@ -14,5 +14,5 @@ AssetOrigin:
   productId: 258020
   packageName: Simple Car Controller
   packageVersion: 1.0
-  assetPath: Assets/Simple Car Controller/Scripts/SCC_InputProcessor.cs
+  assetPath: Assets/3rd_Party/Simple Car Controller/Scripts/SCC_InputProcessor.cs
   uploadId: 593998
