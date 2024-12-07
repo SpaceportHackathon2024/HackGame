@@ -842,6 +842,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: perseverance
       objectReference: {fileID: 0}
+    - target: {fileID: 5971188947181016670, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
+      propertyPath: brakeTorque
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971188947181016670, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
+      propertyPath: engineTorque
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971188947181016670, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
+      propertyPath: finalDriveRatio
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971188947181016670, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
+      propertyPath: wheels.Array.data[0].steeringAngle
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971188947181016670, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
+      propertyPath: wheels.Array.data[1].steeringAngle
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971188947181016670, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
+      propertyPath: wheels.Array.data[4].steeringAngle
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971188947181016670, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
+      propertyPath: wheels.Array.data[5].steeringAngle
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8442793407270365898, guid: 60e9fc109e139774c9bf2ea7b9ed20c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.545322
