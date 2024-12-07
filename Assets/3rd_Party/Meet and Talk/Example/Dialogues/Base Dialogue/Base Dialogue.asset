@@ -21,23 +21,23 @@ MonoBehaviour:
     TargetNodeGuid: 21d5cf27-0301-4b08-9d7c-b4c510d14ee7
   - BaseNodeGuid: 21d5cf27-0301-4b08-9d7c-b4c510d14ee7
     TargetNodeGuid: 62f85d56-c20d-444c-869b-e061135e621d
+  - BaseNodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
+    TargetNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
+  - BaseNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
+    TargetNodeGuid: 3ab91ec7-110f-4eb0-b7f1-5e01a90c711f
   - BaseNodeGuid: 3ab91ec7-110f-4eb0-b7f1-5e01a90c711f
     TargetNodeGuid: 7187faa9-3131-478a-916d-786974f7991c
   - BaseNodeGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
     TargetNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
   - BaseNodeGuid: 62f85d56-c20d-444c-869b-e061135e621d
     TargetNodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
-  - BaseNodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
-    TargetNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
-  - BaseNodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
-    TargetNodeGuid: 3ab91ec7-110f-4eb0-b7f1-5e01a90c711f
   - BaseNodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
     TargetNodeGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
   - BaseNodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
     TargetNodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
   DialogueChoiceNodeDatas:
   - NodeGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
-    Position: {x: 591.2, y: -104.8}
+    Position: {x: 597, y: -104}
     DialogueNodePorts:
     - InputGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
       OutputGuid: 93fdbd6a-b61e-4c6f-8d18-572c005524f8
@@ -103,7 +103,7 @@ MonoBehaviour:
       LanguageGenericType: Will, a ty?
     Duration: 2
   - NodeGuid: 21d5cf27-0301-4b08-9d7c-b4c510d14ee7
-    Position: {x: 87.2, y: -104}
+    Position: {x: 87, y: -104}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -119,60 +119,8 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: Jayden
     Duration: 2
-  - NodeGuid: 3ab91ec7-110f-4eb0-b7f1-5e01a90c711f
-    Position: {x: 1443.2, y: 29.6}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: af815193e85385746bea777429440a85, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 8300000, guid: 26922575fdcbc3f4792d52d353a69dc1, type: 3}
-    Character: {fileID: 11400000, guid: 6c7c2303cba66254eb2469508683ee61, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I'll see you later
-    - languageEnum: 1
-      LanguageGenericType: "Zobaczymy si\u0119 p\xF3zniej"
-    Duration: 3
-  - NodeGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
-    Position: {x: 944.8, y: -104}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 513edbfb290642f4e8bf0261fa0973fb, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 8300000, guid: dc2d470f547bccc4ebfa17dc08f65ad8, type: 3}
-    Character: {fileID: 11400000, guid: 6c7c2303cba66254eb2469508683ee61, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I choose answer one
-    - languageEnum: 1
-      LanguageGenericType: "Wybieram odpowied\u017A pierwsz\u0105"
-    Duration: 3
-  - NodeGuid: 62f85d56-c20d-444c-869b-e061135e621d
-    Position: {x: 340.8, y: -104}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 0654c5d5afaccc24bb45326929bb2755, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 8300000, guid: 97e85c8b138ab8a4689c2fe6ef83f69b, type: 3}
-    Character: {fileID: 11400000, guid: 52bf713ca2c3ac34995eb97495258ba0, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: What you see now is a demo of a sample dialogue.
-    - languageEnum: 1
-      LanguageGenericType: "To co teraz widzisz, jest to demo przyk\u0142adowego
-        dialogu."
-    Duration: 7
   - NodeGuid: e28a2d3f-e245-4334-ad89-cae1454c693b
-    Position: {x: 944.8, y: 130.40001}
+    Position: {x: 945, y: 131}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -189,7 +137,7 @@ MonoBehaviour:
       LanguageGenericType: "Wybieram odpowied\u017C drug\u0105"
     Duration: 3
   - NodeGuid: 3dbf6b6e-6d77-462d-8c4c-8d7376ea8008
-    Position: {x: 1199.2, y: 29.6}
+    Position: {x: 1199, y: 30}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -207,13 +155,65 @@ MonoBehaviour:
       LanguageGenericType: "Dobra odpowied\u017C, obie prowadzi\u0142y do tego samego
         ale mo\u017Cesz poprowadzi\u0107 wiele opcji dialogowych"
     Duration: 7
+  - NodeGuid: 3ab91ec7-110f-4eb0-b7f1-5e01a90c711f
+    Position: {x: 1443, y: 30}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: af815193e85385746bea777429440a85, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 8300000, guid: 26922575fdcbc3f4792d52d353a69dc1, type: 3}
+    Character: {fileID: 11400000, guid: 6c7c2303cba66254eb2469508683ee61, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I'll see you later
+    - languageEnum: 1
+      LanguageGenericType: "Zobaczymy si\u0119 p\xF3zniej"
+    Duration: 3
+  - NodeGuid: f0b67569-d7ba-45fc-b51d-fa00c4710203
+    Position: {x: 945, y: -104}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: 513edbfb290642f4e8bf0261fa0973fb, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 8300000, guid: dc2d470f547bccc4ebfa17dc08f65ad8, type: 3}
+    Character: {fileID: 11400000, guid: 6c7c2303cba66254eb2469508683ee61, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I choose answer one
+    - languageEnum: 1
+      LanguageGenericType: "Wybieram odpowied\u017A pierwsz\u0105"
+    Duration: 3
+  - NodeGuid: 62f85d56-c20d-444c-869b-e061135e621d
+    Position: {x: 341, y: -104}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: 0654c5d5afaccc24bb45326929bb2755, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 8300000, guid: 97e85c8b138ab8a4689c2fe6ef83f69b, type: 3}
+    Character: {fileID: 11400000, guid: 52bf713ca2c3ac34995eb97495258ba0, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What you see now is a demo of a sample dialogue.
+    - languageEnum: 1
+      LanguageGenericType: "To co teraz widzisz, jest to demo przyk\u0142adowego
+        dialogu."
+    Duration: 7
   EndNodeDatas:
   - NodeGuid: 7187faa9-3131-478a-916d-786974f7991c
-    Position: {x: 1676, y: 29.6}
+    Position: {x: 1676, y: 30}
     EndNodeType: 0
   StartNodeDatas:
   - NodeGuid: 9d113ae3-aa9f-4cb8-9bab-6dc4df886d32
-    Position: {x: -500.8, y: -104}
+    Position: {x: -501, y: -104}
     startID: 
   TimerChoiceNodeDatas: []
   EventNodeDatas: []
