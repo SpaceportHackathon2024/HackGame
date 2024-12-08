@@ -12,9 +12,16 @@ public class PhotomodeManager : MonoBehaviour
     [SerializeField] private UnityEvent onPhotomodeExit;
 
     [SerializeField] private string screenshotFolder = "Screenshots";
-
     [HideInInspector]
     public bool isPhotomodeActive = false;
+    private PhotomodeCameraController cameraController;
+    private AudioSource shutterSFX;
+
+    private void Start()
+    {
+        cameraController = photomodeCamera.GetComponent<PhotomodeCameraController>();
+        shutterSFX = GetComponent<AudioSource>();
+    }
 
     public void TogglePhotomode(InputAction.CallbackContext ctx)
     {
@@ -40,6 +47,7 @@ public class PhotomodeManager : MonoBehaviour
     {
         if (ctx.performed && isPhotomodeActive)
         {
+            shutterSFX.PlayOneShot(shutterSFX.clip);
             string folderPath = $"{Application.dataPath}/{screenshotFolder}";
 
             if (!System.IO.Directory.Exists(folderPath))
@@ -47,7 +55,8 @@ public class PhotomodeManager : MonoBehaviour
 
             string screenshotPath = $"{folderPath}/Screenshot_{System.DateTime.Now:yyyyMMdd_HHmmss}.png";
             ScreenCapture.CaptureScreenshot(screenshotPath);
-            Debug.Log($"Screenshot saved to: {screenshotPath}");
+            cameraController.CastRayFromPhotoCamera();
+            //Debug.Log($"Screenshot saved to: {screenshotPath}");
         }
     }
 }

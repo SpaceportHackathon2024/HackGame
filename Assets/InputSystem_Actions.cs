@@ -545,6 +545,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Screenshot"",
+                    ""type"": ""Button"",
+                    ""id"": ""f60c0767-edaf-4398-9ec4-ef7acaea02f9"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1040,6 +1049,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""Photo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""647a1d4b-a2e2-4e8b-b07f-05109c16c712"",
+                    ""path"": ""<Mouse>/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Screenshot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1643,6 +1663,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Vehicle_Steering = m_Vehicle.FindAction("Steering", throwIfNotFound: true);
         m_Vehicle_Handbrake = m_Vehicle.FindAction("Handbrake", throwIfNotFound: true);
         m_Vehicle_Photo = m_Vehicle.FindAction("Photo", throwIfNotFound: true);
+        m_Vehicle_Screenshot = m_Vehicle.FindAction("Screenshot", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1838,6 +1859,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Vehicle_Steering;
     private readonly InputAction m_Vehicle_Handbrake;
     private readonly InputAction m_Vehicle_Photo;
+    private readonly InputAction m_Vehicle_Screenshot;
     public struct VehicleActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -1847,6 +1869,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @Steering => m_Wrapper.m_Vehicle_Steering;
         public InputAction @Handbrake => m_Wrapper.m_Vehicle_Handbrake;
         public InputAction @Photo => m_Wrapper.m_Vehicle_Photo;
+        public InputAction @Screenshot => m_Wrapper.m_Vehicle_Screenshot;
         public InputActionMap Get() { return m_Wrapper.m_Vehicle; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1871,6 +1894,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Photo.started += instance.OnPhoto;
             @Photo.performed += instance.OnPhoto;
             @Photo.canceled += instance.OnPhoto;
+            @Screenshot.started += instance.OnScreenshot;
+            @Screenshot.performed += instance.OnScreenshot;
+            @Screenshot.canceled += instance.OnScreenshot;
         }
 
         private void UnregisterCallbacks(IVehicleActions instance)
@@ -1890,6 +1916,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Photo.started -= instance.OnPhoto;
             @Photo.performed -= instance.OnPhoto;
             @Photo.canceled -= instance.OnPhoto;
+            @Screenshot.started -= instance.OnScreenshot;
+            @Screenshot.performed -= instance.OnScreenshot;
+            @Screenshot.canceled -= instance.OnScreenshot;
         }
 
         public void RemoveCallbacks(IVehicleActions instance)
@@ -2089,6 +2118,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnSteering(InputAction.CallbackContext context);
         void OnHandbrake(InputAction.CallbackContext context);
         void OnPhoto(InputAction.CallbackContext context);
+        void OnScreenshot(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
