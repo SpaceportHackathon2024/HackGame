@@ -1890,14 +1890,14 @@ MonoBehaviour:
   Radius: 10
   Orbits:
     Top:
-      Radius: 2
-      Height: 5
+      Radius: 8
+      Height: 15
     Center:
-      Radius: 4
-      Height: 2.25
+      Radius: 8
+      Height: 5
     Bottom:
-      Radius: 2.5
-      Height: 0.1
+      Radius: 12.25
+      Height: 0.5
     SplineCurvature: 0.5
   RecenteringTarget: 2
   HorizontalAxis:
@@ -1981,9 +1981,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635872773}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08168034, y: 0.024969734, z: -0.002047021, w: 0.9963437}
-  m_LocalPosition: {x: -138.81532, y: -21.963573, z: 351.7715}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.1314011, y: 0.024829911, z: -0.0032922658, w: 0.9910128}
+  m_LocalPosition: {x: -139.0569, y: -18.098715, z: 346.95264}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8277,8 +8277,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7834386, z: -0, w: 0.62146926}
   m_LocalPosition: {x: -138.61734, y: -24.69, z: 355.719}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2416838892560610114}
   - {fileID: 4051780848331404720}
@@ -9568,29 +9568,29 @@ MonoBehaviour:
     wheelCollider: {fileID: 4604806661383543499}
     isSteering: 0
     steeringAngle: 25
-    isTraction: 0
-    isBrake: 0
+    isTraction: 1
+    isBrake: 1
     isHandbrake: 1
   - wheelTransform: {fileID: 8024550978983401605}
     wheelCollider: {fileID: 8906740907996848375}
     isSteering: 0
     steeringAngle: 25
-    isTraction: 0
-    isBrake: 0
+    isTraction: 1
+    isBrake: 1
     isHandbrake: 1
   - wheelTransform: {fileID: 8681646426655186837}
     wheelCollider: {fileID: 3721969362858592902}
-    isSteering: 0
+    isSteering: 1
     steeringAngle: 20
-    isTraction: 0
-    isBrake: 0
+    isTraction: 1
+    isBrake: 1
     isHandbrake: 1
   - wheelTransform: {fileID: 1363472763693516213}
     wheelCollider: {fileID: 2456255105088972133}
-    isSteering: 0
+    isSteering: 1
     steeringAngle: 20
-    isTraction: 0
-    isBrake: 0
+    isTraction: 1
+    isBrake: 1
     isHandbrake: 1
   COM: {fileID: 4051780848331404720}
   speed: 0
@@ -15221,8 +15221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8645907500108531418}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08168036, y: 0.024969736, z: -0.0020470214, w: 0.9963437}
-  m_LocalPosition: {x: -138.81532, y: -21.963573, z: 351.7715}
+  m_LocalRotation: {x: 0.1314011, y: 0.024829913, z: -0.003292266, w: 0.9910128}
+  m_LocalPosition: {x: -139.0569, y: -18.098715, z: 346.95264}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
