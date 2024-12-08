@@ -25,8 +25,8 @@ public class PhotomodeManager : MonoBehaviour
             //photomodeUI.SetActive(isPhotomodeActive);
             //playerController.SetActive(!isPhotomodeActive);
             photomodeCamera.Priority = isPhotomodeActive ? 10 : -1;
-            Cursor.visible = isPhotomodeActive;
-            Cursor.lockState = isPhotomodeActive ? CursorLockMode.None : CursorLockMode.Locked;
+            //Cursor.visible = isPhotomodeActive;
+            //Cursor.lockState = isPhotomodeActive ? CursorLockMode.None : CursorLockMode.Locked;
 
             //if (isPhotomodeActive)
             //    onPhotomodeEnter.Invoke();

@@ -32,16 +32,16 @@ namespace MeetAndTalk.Demo
 
         void Update()
         {
-            if (Interactable)
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
+            //if (Interactable)
+            //{
+            //    Cursor.lockState = CursorLockMode.Locked;
+            //    Cursor.visible = false;
+            //}
+            //else
+            //{
+            //    Cursor.lockState = CursorLockMode.None;
+            //    Cursor.visible = true;
+            //}
 
             if (interactionGameObject != null /*&& Input.GetKeyDown(KeyCode.E)*/)
             {

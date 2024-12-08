@@ -77,6 +77,8 @@ public class GameManager : MonoBehaviour
             OpenCodexMenu();
             codexAction.Reset();
         }
+
+
     }
 
     /// <summary>
@@ -115,6 +117,8 @@ public class GameManager : MonoBehaviour
         pauseMenu.SetActive(isPaused);
         tasksMenu.SetActive(!isPaused);
         codexMenu.SetActive(false);
+
+        
     }
 
     public void OpenCodexMenu()
