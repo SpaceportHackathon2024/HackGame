@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949044e4717678045a126e550e94c960, type: 3}
   m_Name: MoveTask
   m_EditorClassIdentifier: 
-  taskId: 
-  taskName: 
-  taskType: 
+  taskId: 1_Move
+  taskName: Move to the point
+  taskType: Move
   isCompleted: 0
