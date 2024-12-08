@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949044e4717678045a126e550e94c960, type: 3}
   m_Name: ScanTask
   m_EditorClassIdentifier: 
-  taskId: 
-  taskName: 
-  taskType: 
+  taskId: 1_Scan
+  taskName: Scan item
+  taskType: Scan
   isCompleted: 0
