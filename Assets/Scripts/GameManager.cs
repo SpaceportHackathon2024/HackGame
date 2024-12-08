@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject codexMenu;
     public GameObject tasksMenu;
+    public GameObject winMenu;
 
     public TextMeshProUGUI XText;
     public TextMeshProUGUI YText;
@@ -32,6 +33,11 @@ public class GameManager : MonoBehaviour
         pauseMenu.SetActive(false);
         codexMenu.SetActive(false);
         tasksMenu.SetActive(true);
+        winMenu.SetActive(false);
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         pauseAction = InputSystem.actions.FindAction("PauseMenu");
         codexAction = InputSystem.actions.FindAction("CodexMenu");
 
@@ -118,12 +124,21 @@ public class GameManager : MonoBehaviour
     public void TogglePause()
     {
         isPaused = !isPaused;
-        //Time.timeScale = isPaused ? 0 : 1; // 0 = Paused, 1 = Normal Speed
+        Time.timeScale = isPaused ? 0 : 1; // 0 = Paused, 1 = Normal Speed
         pauseMenu.SetActive(isPaused);
         tasksMenu.SetActive(!isPaused);
         codexMenu.SetActive(false);
 
-        
+        if (isPaused == true)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     public void OpenCodexMenu()
@@ -149,7 +164,7 @@ public class GameManager : MonoBehaviour
     {
         playerScore = 0;
         currentLevel = 1;
-        LoadScene("MainMenu"); // Replace with your main menu scene name
+        LoadScene("start_menu"); // Replace with your main menu scene name
     }
 
     /// <summary>
@@ -194,7 +209,10 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void LevelWon()
     {
-        //Debug.Log("All tasks completed! Level Won!");
-        // Implement level win logic (e.g., transition to next level)
+        isPaused = true;
+        Time.timeScale = isPaused ? 0 : 1; // 0 = Paused, 1 = Normal Speed
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        this.winMenu.SetActive(true);
     }
 }
