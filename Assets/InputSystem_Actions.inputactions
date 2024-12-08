@@ -36,7 +36,7 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Hold",
                     "initialStateCheck": false
@@ -510,7 +510,16 @@
                     "name": "Handbrake",
                     "type": "Button",
                     "id": "404e76b7-e524-4815-9276-1cbca3a51c00",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Photo",
+                    "type": "Button",
+                    "id": "c191e73a-7546-4edd-ad8a-b6b8816274ef",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -998,6 +1007,17 @@
                     "processors": "",
                     "groups": "Oculus Quest",
                     "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6f5ae072-2a6e-40ba-8aef-5b9de3da98b7",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Photo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

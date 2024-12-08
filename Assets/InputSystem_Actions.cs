@@ -58,7 +58,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""852140f2-7766-474d-8707-702459ba45f3"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Hold"",
                     ""initialStateCheck"": false
@@ -532,7 +532,16 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""name"": ""Handbrake"",
                     ""type"": ""Button"",
                     ""id"": ""404e76b7-e524-4815-9276-1cbca3a51c00"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Photo"",
+                    ""type"": ""Button"",
+                    ""id"": ""c191e73a-7546-4edd-ad8a-b6b8816274ef"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -1020,6 +1029,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Oculus Quest"",
                     ""action"": ""Steering"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6f5ae072-2a6e-40ba-8aef-5b9de3da98b7"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Photo"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1622,6 +1642,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Vehicle_Brake = m_Vehicle.FindAction("Brake", throwIfNotFound: true);
         m_Vehicle_Steering = m_Vehicle.FindAction("Steering", throwIfNotFound: true);
         m_Vehicle_Handbrake = m_Vehicle.FindAction("Handbrake", throwIfNotFound: true);
+        m_Vehicle_Photo = m_Vehicle.FindAction("Photo", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1816,6 +1837,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Vehicle_Brake;
     private readonly InputAction m_Vehicle_Steering;
     private readonly InputAction m_Vehicle_Handbrake;
+    private readonly InputAction m_Vehicle_Photo;
     public struct VehicleActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -1824,6 +1846,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @Brake => m_Wrapper.m_Vehicle_Brake;
         public InputAction @Steering => m_Wrapper.m_Vehicle_Steering;
         public InputAction @Handbrake => m_Wrapper.m_Vehicle_Handbrake;
+        public InputAction @Photo => m_Wrapper.m_Vehicle_Photo;
         public InputActionMap Get() { return m_Wrapper.m_Vehicle; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1845,6 +1868,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Handbrake.started += instance.OnHandbrake;
             @Handbrake.performed += instance.OnHandbrake;
             @Handbrake.canceled += instance.OnHandbrake;
+            @Photo.started += instance.OnPhoto;
+            @Photo.performed += instance.OnPhoto;
+            @Photo.canceled += instance.OnPhoto;
         }
 
         private void UnregisterCallbacks(IVehicleActions instance)
@@ -1861,6 +1887,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Handbrake.started -= instance.OnHandbrake;
             @Handbrake.performed -= instance.OnHandbrake;
             @Handbrake.canceled -= instance.OnHandbrake;
+            @Photo.started -= instance.OnPhoto;
+            @Photo.performed -= instance.OnPhoto;
+            @Photo.canceled -= instance.OnPhoto;
         }
 
         public void RemoveCallbacks(IVehicleActions instance)
@@ -2059,6 +2088,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnBrake(InputAction.CallbackContext context);
         void OnSteering(InputAction.CallbackContext context);
         void OnHandbrake(InputAction.CallbackContext context);
+        void OnPhoto(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
