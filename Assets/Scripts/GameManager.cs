@@ -165,6 +165,11 @@ public class GameManager : MonoBehaviour
         //Debug.Log($"Task '{taskName}' not found or already completed.");
     }
 
+    public void RoverUpsideDown()
+    {
+        Debug.Log("Car is now upside down!");
+    }
+
     /// <summary>
     /// Check if all tasks are completed.
     /// </summary>
