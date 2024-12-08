@@ -50,7 +50,7 @@ MonoBehaviour:
         wszystkich wybranych nod\xF3w"
     Duration: 4
   - NodeGuid: 2151423e-0c6f-4c4a-af5a-50f3c92be611
-    Position: {x: 400, y: 913.6}
+    Position: {x: 400, y: 914}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
       LanguageGenericType: Dialog Numer 2
     Duration: 2
   - NodeGuid: 92cf0c6a-bcd4-41a7-935c-bda939928122
-    Position: {x: 615.2, y: 600}
+    Position: {x: 615, y: 600}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -119,14 +119,14 @@ MonoBehaviour:
     Duration: 2
   EndNodeDatas:
   - NodeGuid: 7dccacf8-9d38-461e-a745-6ec0efd8d35b
-    Position: {x: 1330.4, y: 600}
+    Position: {x: 1330, y: 600}
     EndNodeType: 0
   StartNodeDatas:
   - NodeGuid: c824356b-46a8-4ead-9d64-d81a21c9c1b4
-    Position: {x: 300, y: 296.80002}
+    Position: {x: 300, y: 297}
     startID: 
   - NodeGuid: 4ef80fc3-89f3-4370-b23f-bfc964bd20f8
-    Position: {x: 300, y: 598.39996}
+    Position: {x: 300, y: 599}
     startID: 
   - NodeGuid: 57bfc815-56f6-4a71-8a3e-00d483e44576
     Position: {x: 300, y: 900}
