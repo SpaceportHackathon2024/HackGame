@@ -48,7 +48,7 @@ namespace MeetAndTalk
         private void Update()
         {
             Timer -= Time.deltaTime;
-            if (Timer > 0) dialogueUIManager.TimerSlider.value = Timer;
+            //if (Timer > 0) dialogueUIManager.TimerSlider.value = Timer;
         }
 
         public void ChangeUI(DialogueUIManager UI)
@@ -138,7 +138,7 @@ namespace MeetAndTalk
 
             dialogueUIManager.fullText = $"{_nodeData.TextType.Find(text => text.languageEnum == localizationManager.SelectedLang()).LanguageGenericType}";
 
-            dialogueUIManager.SkipButton.SetActive(true);
+            //dialogueUIManager.SkipButton.SetActive(true);
             MakeButtons(new List<DialogueNodePort>());
 
             if(_nodeData.AudioClips.Find(clip => clip.languageEnum == localizationManager.SelectedLang()).LanguageGenericType != null) audioSource.PlayOneShot(_nodeData.AudioClips.Find(clip => clip.languageEnum == localizationManager.SelectedLang()).LanguageGenericType);
@@ -165,14 +165,14 @@ namespace MeetAndTalk
 
             dialogueUIManager.fullText = $"{_nodeData.TextType.Find(text => text.languageEnum == localizationManager.SelectedLang()).LanguageGenericType}";
 
-            dialogueUIManager.SkipButton.SetActive(true);
+            //dialogueUIManager.SkipButton.SetActive(true);
             MakeButtons(new List<DialogueNodePort>());
 
             _nodeChoiceInvoke = _nodeData;
 
-            StopAllTrackedCoroutines();
-            IEnumerator tmp() { yield return new WaitForSeconds(_nodeData.Duration); ChoiceNode_GenerateChoice(); }
-            StartTrackedCoroutine(tmp()); 
+            //StopAllTrackedCoroutines();
+            //IEnumerator tmp() { yield return new WaitForSeconds(_nodeData.Duration); ChoiceNode_GenerateChoice(); }
+            //StartTrackedCoroutine(tmp()); 
 
             if (_nodeData.AudioClips.Find(clip => clip.languageEnum == localizationManager.SelectedLang()).LanguageGenericType != null) audioSource.PlayOneShot(_nodeData.AudioClips.Find(clip => clip.languageEnum == localizationManager.SelectedLang()).LanguageGenericType);
         }
@@ -182,19 +182,24 @@ namespace MeetAndTalk
             switch (_nodeData.EndNodeType)
             {
                 case EndNodeType.End:
-                    dialogueUIManager.dialogueCanvas.SetActive(false);
-                    EndDialogueEvent.Invoke();
+                    // Close all dialogue UI and cleanup
+                    ForceEndDialog();
                     break;
+
                 case EndNodeType.Repeat:
                     CheckNodeType(GetNodeByGuid(currentDialogueNodeData.NodeGuid));
                     break;
+
                 case EndNodeType.GoBack:
                     CheckNodeType(GetNodeByGuid(lastDialogueNodeData.NodeGuid));
                     break;
+
                 case EndNodeType.ReturnToStart:
-                    CheckNodeType(GetNextNode(dialogueContainer.StartNodeDatas[Random.Range(0,dialogueContainer.StartNodeDatas.Count)]));
+                    CheckNodeType(GetNextNode(dialogueContainer.StartNodeDatas[Random.Range(0, dialogueContainer.StartNodeDatas.Count)]));
                     break;
+
                 default:
+                    Debug.LogError("Unknown EndNodeType encountered.");
                     break;
             }
         }
@@ -221,9 +226,9 @@ namespace MeetAndTalk
 
 
         void DialogueNode_NextNode() { CheckNodeType(GetNextNode(_nodeDialogueInvoke)); }
-        void ChoiceNode_GenerateChoice() { MakeButtons(_nodeChoiceInvoke.DialogueNodePorts);
-            dialogueUIManager.SkipButton.SetActive(false);
-        }
+        //void ChoiceNode_GenerateChoice() { MakeButtons(_nodeChoiceInvoke.DialogueNodePorts);
+        //    dialogueUIManager.SkipButton.SetActive(false);
+        //}
 
         #region Improve Coroutine
         private void StopAllTrackedCoroutines()
@@ -260,15 +265,16 @@ namespace MeetAndTalk
                 case DialogueNodeData nodeData:
                     DialogueNode_NextNode();
                     break;
-                case DialogueChoiceNodeData nodeData:
-                    ChoiceNode_GenerateChoice();
-                    break;
+                //case DialogueChoiceNodeData nodeData:
+                //    ChoiceNode_GenerateChoice();
+                //    break;
                 default:
                     break;
             }
         }
         public void ForceEndDialog()
         {
+            //Debug.Log("Prosto pizdec!");
             // Reset Audio
             audioSource.Stop();
 

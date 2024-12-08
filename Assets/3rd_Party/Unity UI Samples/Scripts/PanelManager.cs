@@ -25,6 +25,11 @@ public class PanelManager : MonoBehaviour {
 		OpenPanel(initiallyOpen);
 	}
 
+	public void OpenRecordPanel(Animator anim, string Title, string InfoBlock)
+	{
+		OpenPanel(anim);
+	}
+
 	public void OpenPanel (Animator anim)
 	{
 		if (m_Open == anim)

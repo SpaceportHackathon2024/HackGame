@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: movement_tutorial
+  m_EditorClassIdentifier: 
+  NodeLinkDatas:
+  - BaseNodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
+    TargetNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+  - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+    TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+    TargetNodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+    Position: {x: 467, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: 8916e5d7eb8faf94298351d1dd9d5917, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Hmm... satellite data shows something interesting nearby.
+
+        Maybe
+        it''s just a rock... or maybe it''s the fossilized paw of a Martian monster.
+        Who''s to say? Point your camera at it and snap a photo. Remember, we''re
+        researchers, not tourists!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 24
+  - NodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+    Position: {x: 239, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: 2074057b2632ddb44a318b04d6db2297, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Fantastic! Smooth as a brand-new rover. Not a creak or
+        wobble.
+    - languageEnum: 1
+      LanguageGenericType: asdfasd
+    Duration: 6
+  EndNodeDatas:
+  - NodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+    Position: {x: 694, y: 201}
+    EndNodeType: 0
+  StartNodeDatas:
+  - NodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
+    Position: {x: 100, y: 201}
+    startID: 
+  TimerChoiceNodeDatas: []
+  EventNodeDatas: []
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IFNodeDatas: []

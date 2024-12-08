@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: WelcomeDialog
+  m_EditorClassIdentifier: 
+  NodeLinkDatas:
+  - BaseNodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
+    TargetNodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
+  - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+    TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+  - BaseNodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
+    TargetNodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
+  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+    TargetNodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
+  - BaseNodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
+    TargetNodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+  - BaseNodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
+    TargetNodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
+  - BaseNodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
+    TargetNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+    Position: {x: 726, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: f930a597647b8b44b8497dc0822d0840, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Alright... signal\u2019s coming through. Welcome to Mars,
+        neural model! Or should I call you \u201CMaster of the Sands\u201D?"
+    - languageEnum: 1
+      LanguageGenericType: asdfasd
+    Duration: 10
+  - NodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+    Position: {x: 984, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: e977734da1d82864f802073cd1bf483b, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Congrats on the successful landing of the Perseverance
+        rover! It\u2019s like shooting an arrow straight into an apple \u2014 except
+        the apple\u2019s millions of kilometers away. Not bad, huh?"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 16
+  - NodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
+    Position: {x: 1459, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: ead78482d437dc9418a6225b8533a339, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'The landing was flawless, and that canyon ahead? That''s
+        your road to the crater. Let''s see how you handle movement.
+
+        Roll
+        forward about 30 meters. Your waypoint is the bend up ahead- straight down
+        the middle.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 16
+  - NodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
+    Position: {x: 235, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 2ddfd7ae659c10840a70e0051d7353b7, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
+    Position: {x: 484, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: b4c4a6c4786b4d74e962cfbd222e09b6, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 2ddfd7ae659c10840a70e0051d7353b7, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Connection restored...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
+    Position: {x: 1221, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: 856615c74aac09044a93c5d7c6afb610, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Our mission is to explore Jezero Crater. This ancient
+        Martian landscape might hold clues to life from billions of years ago...
+        or it might just be a lot of red dust. Let\u2019s find out together!"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 16
+  EndNodeDatas:
+  - NodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+    Position: {x: 1788, y: 201}
+    EndNodeType: 0
+  StartNodeDatas:
+  - NodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
+    Position: {x: 100, y: 201}
+    startID: 
+  TimerChoiceNodeDatas: []
+  EventNodeDatas: []
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IFNodeDatas: []
