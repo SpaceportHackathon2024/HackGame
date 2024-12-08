@@ -28,6 +28,7 @@ public class PhotomodeManager : MonoBehaviour
         if (ctx.performed)
         {
             isPhotomodeActive = !isPhotomodeActive;
+            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAA");
 
             //photomodeUI.SetActive(isPhotomodeActive);
             //playerController.SetActive(!isPhotomodeActive);
@@ -45,8 +46,11 @@ public class PhotomodeManager : MonoBehaviour
 
     public void TakeScreenshot(InputAction.CallbackContext ctx)
     {
+        Debug.Log("CCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
+
         if (ctx.performed && isPhotomodeActive)
         {
+            Debug.Log("BBBBBBBBBBBBBBBBBBBBBBBbb");
             shutterSFX.PlayOneShot(shutterSFX.clip);
             string folderPath = $"{Application.dataPath}/{screenshotFolder}";
 

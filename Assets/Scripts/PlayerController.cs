@@ -5,13 +5,13 @@ namespace MeetAndTalk.Demo
 {
     public class PlayerController: MonoBehaviour
     {
-        [Header("Localization")]
-        public TMPro.TMP_Text Lanuage;
+        //[Header("Localization")]
+        //public TMPro.TMP_Text Lanuage;
 
-        [Header("Interaction")]
-        public BoxCollider BoxCollider;
-        public GameObject InteractionUI;
-        public TMP_Text InteractionText;
+        //[Header("Interaction")]
+        //public BoxCollider BoxCollider;
+        //public GameObject InteractionUI;
+        //public TMP_Text InteractionText;
 
         [Header("Camera")]
         public Camera playerCamera;
@@ -22,7 +22,7 @@ namespace MeetAndTalk.Demo
 
         void Start()
         {
-            InteractionUI.SetActive(false);
+            //InteractionUI.SetActive(false);
         }
 
         public void SetupInteractable(bool mode)
@@ -50,7 +50,7 @@ namespace MeetAndTalk.Demo
                 interactionGameObject.gameObject.SetActive(false);
             }
 
-            Lanuage.text = $"Language:\n<size=64>{Localization.LocalizationManager.Instance.SelectedLang()}";
+            //Lanuage.text = $"Language:\n<size=64>{Localization.LocalizationManager.Instance.SelectedLang()}";
             //if (Input.GetKeyDown(KeyCode.U))
             //{
             //    Localization.LocalizationManager.Instance.selectedLang = SystemLanguage.English;
@@ -68,7 +68,7 @@ namespace MeetAndTalk.Demo
                 interactionGameObject = other.gameObject;
 
                 //InteractionUI.SetActive(false);
-                InteractionText.text = other.gameObject.GetComponent<DemoInteraction>().InteractionText;
+                //InteractionText.text = other.gameObject.GetComponent<DemoInteraction>().InteractionText;
             }
         }
 

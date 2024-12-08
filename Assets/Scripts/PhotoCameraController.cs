@@ -46,6 +46,9 @@ public class PhotomodeCameraController : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, raycastLayerMask))
         {
             Debug.Log($"Hit object: {hit.collider.gameObject.name} at position: {hit.point}");
+            GameManager gameManager = FindAnyObjectByType<GameManager>();
+
+            gameManager.CompleteTask("1_Take_Photo");
         }
         else
         {

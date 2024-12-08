@@ -34,6 +34,11 @@ public class GameManager : MonoBehaviour
         tasksMenu.SetActive(true);
         pauseAction = InputSystem.actions.FindAction("PauseMenu");
         codexAction = InputSystem.actions.FindAction("CodexMenu");
+
+        foreach (var task in tasks)
+        {
+            task.isCompleted = false;
+        }
     }
 
     /// <summary>
@@ -113,7 +118,7 @@ public class GameManager : MonoBehaviour
     public void TogglePause()
     {
         isPaused = !isPaused;
-        Time.timeScale = isPaused ? 0 : 1; // 0 = Paused, 1 = Normal Speed
+        //Time.timeScale = isPaused ? 0 : 1; // 0 = Paused, 1 = Normal Speed
         pauseMenu.SetActive(isPaused);
         tasksMenu.SetActive(!isPaused);
         codexMenu.SetActive(false);
@@ -154,7 +159,7 @@ public class GameManager : MonoBehaviour
     {
         foreach (var task in tasks)
         {
-            if (task.taskName == taskName && !task.isCompleted)
+            if (task.taskId == taskName && !task.isCompleted)
             {
                 task.isCompleted = true;
                 //Debug.Log($"Task '{taskName}' completed!");

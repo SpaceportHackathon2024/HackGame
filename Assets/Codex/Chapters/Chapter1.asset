@@ -25,5 +25,5 @@ MonoBehaviour:
     Proin sed purus quis libero efficitur ultrices. Sed tempus nulla sit amet nunc
     varius, eu feugiat nunc faucibus. Praesent fringilla, tortor quis pretium ornare,
     magna mauris tempus magna, vel convallis turpis magna ac turpis.
-  ChapterImage: {fileID: 21300000, guid: 6ff74f0c196744a42b692d24062c5575, type: 3}
+  ChapterImage: {fileID: 21300000, guid: 1ad2b1af0903c1340bff86931d78f132, type: 3}
   IsUnlocked: 1

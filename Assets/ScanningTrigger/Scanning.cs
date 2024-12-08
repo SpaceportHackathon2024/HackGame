@@ -4,10 +4,13 @@ public class Scanning : Interactable
 {
     //public GameObject scanningLevelComponent;
     public int Level;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public string taskId;
+    private GameManager gameManager;
+
+
     void Start()
     {
-        
+        gameManager = FindFirstObjectByType<GameManager>();
     }
 
     // Update is called once per frame
@@ -18,8 +21,6 @@ public class Scanning : Interactable
 
     public override void Interact()
     {
-        //ScanningLevelManager scanningLevelManager = scanningLevelComponent.GetComponent<ScanningLevelManager>();
-        Debug.Log(2);
-        //scanningLevelManager.StartLevel(Level);
+        gameManager.CompleteTask(taskId);
     }
 }
