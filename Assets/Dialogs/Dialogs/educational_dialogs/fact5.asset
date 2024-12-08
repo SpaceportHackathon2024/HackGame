@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: fact5
+  m_EditorClassIdentifier: 
+  NodeLinkDatas:
+  - BaseNodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
+    TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+    TargetNodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+    Position: {x: 232, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Every rock on Mars is a page from the planet''s history
+        book. The real question is: can you read Martian? Looks like you''re picking
+        up the language pretty fast!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  EndNodeDatas:
+  - NodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+    Position: {x: 481, y: 201}
+    EndNodeType: 0
+  StartNodeDatas:
+  - NodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
+    Position: {x: 100, y: 201}
+    startID: 
+  TimerChoiceNodeDatas: []
+  EventNodeDatas: []
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IFNodeDatas: []

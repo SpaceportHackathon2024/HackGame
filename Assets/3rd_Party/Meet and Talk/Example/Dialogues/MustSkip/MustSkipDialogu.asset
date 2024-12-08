@@ -25,11 +25,9 @@ MonoBehaviour:
     TargetNodeGuid: b879a269-bbd4-456a-9d1f-b4f37e5523f6
   - BaseNodeGuid: 2f894b35-6077-4257-bb7d-180ef1ed6182
     TargetNodeGuid: 2e6c61ae-c456-459e-8315-e107240b911b
-  - BaseNodeGuid: b879a269-bbd4-456a-9d1f-b4f37e5523f6
-    TargetNodeGuid: b0eff016-f357-4d18-a0b1-990f74739b61
   DialogueChoiceNodeDatas:
   - NodeGuid: 2f894b35-6077-4257-bb7d-180ef1ed6182
-    Position: {x: 1066.4, y: 598.39996}
+    Position: {x: 1066, y: 599}
     DialogueNodePorts:
     - InputGuid: b879a269-bbd4-456a-9d1f-b4f37e5523f6
       OutputGuid: 2f894b35-6077-4257-bb7d-180ef1ed6182
@@ -63,7 +61,7 @@ MonoBehaviour:
     Duration: 5
   DialogueNodeDatas:
   - NodeGuid: 00080a2b-63e3-4558-ad9e-8db2de300291
-    Position: {x: 619.2, y: 598.39996}
+    Position: {x: 619, y: 599}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -82,7 +80,7 @@ MonoBehaviour:
         do nast\u0119pnego dialogu"
     Duration: 5
   - NodeGuid: b879a269-bbd4-456a-9d1f-b4f37e5523f6
-    Position: {x: 1384, y: 598.39996}
+    Position: {x: 1384, y: 599}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -99,7 +97,7 @@ MonoBehaviour:
       LanguageGenericType: "To dobrze, teraz ju\u017C id\u017A"
     Duration: 0
   - NodeGuid: 76d6184f-f79f-4a98-9c72-47591da9bd69
-    Position: {x: 840, y: 598.39996}
+    Position: {x: 840, y: 599}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -117,7 +115,7 @@ MonoBehaviour:
         dalej"
     Duration: 0
   - NodeGuid: 2e6c61ae-c456-459e-8315-e107240b911b
-    Position: {x: 1384, y: 842.39996}
+    Position: {x: 1384, y: 843}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -135,11 +133,11 @@ MonoBehaviour:
     Duration: 0
   EndNodeDatas:
   - NodeGuid: b0eff016-f357-4d18-a0b1-990f74739b61
-    Position: {x: 1628.8, y: 598.39996}
+    Position: {x: 1629, y: 599}
     EndNodeType: 0
   StartNodeDatas:
   - NodeGuid: e3241282-f577-45ef-890a-947b4fc2a682
-    Position: {x: 524, y: 598.39996}
+    Position: {x: 524, y: 599}
     startID: 
   TimerChoiceNodeDatas: []
   EventNodeDatas: []
