@@ -17,8 +17,6 @@ MonoBehaviour:
     TargetNodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
   - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
     TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
-  - BaseNodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
-    TargetNodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
   - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
     TargetNodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
   - BaseNodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
@@ -27,6 +25,8 @@ MonoBehaviour:
     TargetNodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
   - BaseNodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
     TargetNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+  - BaseNodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
+    TargetNodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
@@ -34,7 +34,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: f930a597647b8b44b8497dc0822d0840, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: bc232f9c72b84614290d87721d980e9e, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
@@ -52,7 +52,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: e977734da1d82864f802073cd1bf483b, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: 70d3f2589c7f71d4eba14af7c4c9e083, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
@@ -71,7 +71,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: ead78482d437dc9418a6225b8533a339, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: d3c99f989c1763544a5845e59c575419, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
@@ -85,6 +85,42 @@ MonoBehaviour:
         Roll
         forward about 30 meters. Your waypoint is the bend up ahead- straight down
         the middle.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 16
+  - NodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
+    Position: {x: 484, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: ac8768c527e044a4d846ec66c4e902b2, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 2ddfd7ae659c10840a70e0051d7353b7, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Connection restored...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 3
+  - NodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
+    Position: {x: 1221, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: d5e00b6b696d3f64d8569dccde1cff4c, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Our mission is to explore Jezero Crater. This ancient
+        Martian landscape might hold clues to life from billions of years ago...
+        or it might just be a lot of red dust. Let\u2019s find out together!"
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 16
@@ -105,42 +141,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 3
-  - NodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
-    Position: {x: 484, y: 201}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: b4c4a6c4786b4d74e962cfbd222e09b6, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 2ddfd7ae659c10840a70e0051d7353b7, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Connection restored...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 3
-  - NodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
-    Position: {x: 1221, y: 201}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 856615c74aac09044a93c5d7c6afb610, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "Our mission is to explore Jezero Crater. This ancient
-        Martian landscape might hold clues to life from billions of years ago...
-        or it might just be a lot of red dust. Let\u2019s find out together!"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 16
   EndNodeDatas:
   - NodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
     Position: {x: 1788, y: 201}

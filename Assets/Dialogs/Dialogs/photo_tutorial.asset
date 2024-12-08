@@ -24,7 +24,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: d4c0d7b9c8f050d42bffbebbb0675c6f, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: 559f2a84c59379b4ca6ade8e95533343, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}

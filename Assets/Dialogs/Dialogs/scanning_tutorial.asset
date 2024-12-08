@@ -17,10 +17,10 @@ MonoBehaviour:
     TargetNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
   - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
     TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
-  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
-    TargetNodeGuid: d9c6122b-9558-4d15-973f-70299ec55557
   - BaseNodeGuid: d9c6122b-9558-4d15-973f-70299ec55557
     TargetNodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
+    TargetNodeGuid: d9c6122b-9558-4d15-973f-70299ec55557
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
@@ -28,7 +28,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: ab44f0bca638ea84ebc904b931f22f0c, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: 7242c57c1281b9a4aa677b8f9c4d46d4, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
@@ -47,7 +47,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 57fee67fc717b0743948b861f1a18c7e, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: 63a248fee471c7244911a9f09143c385, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 19bff3096e5e83a40bacf8cb34c0c2ec, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: 1351c5e39fa29ff44be6e947ee48fd06, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 2ddfd7ae659c10840a70e0051d7353b7, type: 2}

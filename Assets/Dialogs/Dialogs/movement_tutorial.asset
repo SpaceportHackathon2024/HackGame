@@ -15,10 +15,10 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
     TargetNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
-  - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
-    TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
   - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
     TargetNodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
+  - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+    TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
@@ -26,7 +26,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 8916e5d7eb8faf94298351d1dd9d5917, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: d9987b845f2ce514cbce406aa1177286, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
@@ -48,7 +48,7 @@ MonoBehaviour:
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 2074057b2632ddb44a318b04d6db2297, type: 3}
+      LanguageGenericType: {fileID: 8300000, guid: 6c159401b554afc489cc8838a8ca89e1, type: 3}
     - languageEnum: 1
       LanguageGenericType: {fileID: 0}
     Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
