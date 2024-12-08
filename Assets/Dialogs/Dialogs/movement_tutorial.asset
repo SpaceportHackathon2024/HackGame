@@ -15,14 +15,28 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: cd767170-7ed3-4e54-a286-979173aa596d
     TargetNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
-  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
-    TargetNodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
-  - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
-    TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
+  - NodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
+    Position: {x: 239, y: 201}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: 6c159401b554afc489cc8838a8ca89e1, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Fantastic! Smooth as a brand-new rover. Not a creak or
+        wobble.
+    - languageEnum: 1
+      LanguageGenericType: asdfasd
+    Duration: 6
   - NodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
-    Position: {x: 467, y: 201}
+    Position: {x: 504, y: 432}
     DialogueNodePorts: []
     AudioClips:
     - languageEnum: 0
@@ -43,24 +57,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 24
-  - NodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
-    Position: {x: 239, y: 201}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: 6c159401b554afc489cc8838a8ca89e1, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Fantastic! Smooth as a brand-new rover. Not a creak or
-        wobble.
-    - languageEnum: 1
-      LanguageGenericType: asdfasd
-    Duration: 6
   EndNodeDatas:
   - NodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
     Position: {x: 694, y: 201}

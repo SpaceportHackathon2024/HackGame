@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
-  m_Name: photo_tutorial
+  m_Name: soil_scanning
   m_EditorClassIdentifier: 
   NodeLinkDatas:
   - BaseNodeGuid: cd767170-7ed3-4e54-a286-979173aa596d

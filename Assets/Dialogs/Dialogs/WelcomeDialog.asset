@@ -17,15 +17,13 @@ MonoBehaviour:
     TargetNodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
   - BaseNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
     TargetNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
-  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
-    TargetNodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
   - BaseNodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
     TargetNodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
-  - BaseNodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
-    TargetNodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
   - BaseNodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
     TargetNodeGuid: 4e4e594b-5ec6-4fc8-95e9-b4b03aa91311
-  - BaseNodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
+  - BaseNodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
+    TargetNodeGuid: 760b5c48-3025-42fb-9db9-68dcd656de7c
+  - BaseNodeGuid: af1d5be8-49de-409e-b109-8c7c015e4152
     TargetNodeGuid: 20f44c9c-8b68-4134-96ff-b814b50f95e7
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
@@ -105,25 +103,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 3
-  - NodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
-    Position: {x: 1221, y: 201}
-    DialogueNodePorts: []
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 8300000, guid: d5e00b6b696d3f64d8569dccde1cff4c, type: 3}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
-    AvatarPos: 0
-    AvatarType: 0
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "Our mission is to explore Jezero Crater. This ancient
-        Martian landscape might hold clues to life from billions of years ago...
-        or it might just be a lot of red dust. Let\u2019s find out together!"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 16
   - NodeGuid: 2cfa43f4-3048-4529-9214-ac40c9e56713
     Position: {x: 235, y: 201}
     DialogueNodePorts: []
@@ -141,6 +120,25 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 3
+  - NodeGuid: d37ce4b8-e78e-439f-8cb3-71941c7d8275
+    Position: {x: 1238, y: 619}
+    DialogueNodePorts: []
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 8300000, guid: d5e00b6b696d3f64d8569dccde1cff4c, type: 3}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    Character: {fileID: 11400000, guid: 0c38781e55bbf414bacacf79f9520701, type: 2}
+    AvatarPos: 0
+    AvatarType: 0
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Our mission is to explore Jezero Crater. This ancient
+        Martian landscape might hold clues to life from billions of years ago...
+        or it might just be a lot of red dust. Let\u2019s find out together!"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 16
   EndNodeDatas:
   - NodeGuid: 6a90ff73-2b4a-46ef-a4fe-81aba579baa2
     Position: {x: 1788, y: 201}
