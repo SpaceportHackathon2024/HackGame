@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be023397539df354fa62cf49fe438203, type: 3}
   m_Name: Chapter3
   m_EditorClassIdentifier: 
-  Title: Test 3
-  Content: e010fbb8d23a8792a50b701ae9882c22d22ddae4a141328da24120c2791071d0
+  Title: JPL
+  Content: JPL built a copy of the Perseverance; a twin rover used for testing and
+    problem solving, OPTIMISM (Operational Perseverance Twin for Integration of Mechanisms
+    and Instruments Sent to Mars), a vehicle system test bed (VSTB). It is housed
+    at the JPL Mars Yard and is used to test operational procedures and to aid in
+    problem solving should any issues arise with Perseverance.
   ChapterImage: {fileID: 21300000, guid: f883bda59a62ce24b8cf729fc95c52a7, type: 3}
-  IsUnlocked: 0
+  IsUnlocked: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName:
   - languageEnum: 0
-    LanguageGenericType: Dispatcher
+    LanguageGenericType: CAPCOM
   - languageEnum: 1
     LanguageGenericType: 
-  textColor: {r: 1, g: 0.733706, b: 0, a: 1}
+  textColor: {r: 0.990566, g: 0.28010148, b: 0, a: 1}

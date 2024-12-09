@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be023397539df354fa62cf49fe438203, type: 3}
+  m_Name: Chapter4
+  m_EditorClassIdentifier: 
+  Title: Tech Specs
+  Content: 'Carry and protect the computer, electronic, and instrument systems
+
+    Length
+
+    10
+    feet (3 meters)
+
+    Width
+
+    9 feet (2.7 meters)
+
+    Height
+
+    7 feet
+    (2.2 meters)
+
+    Weight/mass
+
+    2,260 pounds / 1,025 kilograms
+
+    Structure
+
+    Bottom
+    and sides are the chassis frame; top is the rover equipment deck (its "back");
+    bottom is the belly pan for the new Sampling and Caching interior workspace,
+    the belly pan in that front end (about the first 1 1/2 feet from front end) was
+    dropped soon after the rover landed, to expose it to the Martian atmosphere and
+    make room for sample handling.'
+  ChapterImage: {fileID: 21300000, guid: f883bda59a62ce24b8cf729fc95c52a7, type: 3}
+  IsUnlocked: 1

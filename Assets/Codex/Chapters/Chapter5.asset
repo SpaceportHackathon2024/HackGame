@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be023397539df354fa62cf49fe438203, type: 3}
+  m_Name: Chapter5
+  m_EditorClassIdentifier: 
+  Title: -----
+  Content: "Tak3 contr0l of a rov3r 0n Mars and expl0re its surfa\r\n!\r\n\U0001D437\r\n\U0001D45F\r\n1\r\n\U0001D463\r\n\U0001D452\r\n\U0001D44E\r\n\U0001D450\r\n\U0001D45F\r\n0\r\n!Dr1veacr0
+    rocky terrain, sc@n for int3rest!ng mat3rial$, and t@ke ph0t0s of th3 @mazing
+    sight$. $tore y0ur ph0t0$ and d@t@ t0 c0mplet3 m!ss!0ns and unc0ver Mars' secR3Ts.
+    Keep an ey3 0n y0ur rov3r's en3rgy as you expl0re, sc@n, and captur3 the bEautY
+    of th3 R3d Pl@net!"
+  ChapterImage: {fileID: 21300000, guid: f883bda59a62ce24b8cf729fc95c52a7, type: 3}
+  IsUnlocked: 0

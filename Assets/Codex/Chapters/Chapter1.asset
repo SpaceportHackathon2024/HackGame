@@ -12,18 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be023397539df354fa62cf49fe438203, type: 3}
   m_Name: Chapter1
   m_EditorClassIdentifier: 
-  Title: Test 1
-  Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et
-    lorem viverra libero feugiat vulputate eget quis est. Nam sollicitudin eget turpis
-    sit amet finibus. Nullam maximus sodales nulla. Vivamus felis arcu, mattis vitae
-    pulvinar vel, finibus vitae mauris. Morbi feugiat mollis fermentum. Aenean eget
-    nibh leo. Vestibulum vel sapien quis metus placerat elementum. Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit. In convallis nec enim at bibendum. Ut
-    pretium, justo nec bibendum volutpat, orci libero ornare tellus, vitae elementum
-    est dolor eget elit. Curabitur ut euismod sem. Donec eget sapien eget metus feugiat
-    vestibulum nec in ante. Mauris rhoncus eros facilisis neque rhoncus hendrerit.
-    Proin sed purus quis libero efficitur ultrices. Sed tempus nulla sit amet nunc
-    varius, eu feugiat nunc faucibus. Praesent fringilla, tortor quis pretium ornare,
-    magna mauris tempus magna, vel convallis turpis magna ac turpis.
+  Title: Curiosity name origin
+  Content: The rover's name was chosen from more than 28,000 submissions in a nationwide
+    school contest[9]. The winner was Alexander Mather, a seventh-grade student from
+    Virginia, who proposed the name Perseverance. The student and his family were
+    invited to the Kennedy Space Centre to watch the rover launch from Cape Canaveral
+    Air Force Station. In 2021, the Cambridge English Dictionary named Perseverance
+    the word of the year.
   ChapterImage: {fileID: 21300000, guid: 1ad2b1af0903c1340bff86931d78f132, type: 3}
   IsUnlocked: 1

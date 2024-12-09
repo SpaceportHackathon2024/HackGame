@@ -15,9 +15,13 @@ namespace MeetAndTalk.Demo
         public void Interaction()
         {
             gameManager = FindAnyObjectByType<GameManager>();
-            if (gameManager?.tasks != null && gameManager.tasks.Any())
+            if (gameManager?.tasks != null && gameManager.tasks.Any() && GameManager.first == 1)
             {
                 gameManager.tasks[0].isCompleted = true;
+            }
+            else if(gameManager?.tasks != null && gameManager.tasks.Any())
+            {
+                GameManager.first = 1;
             }
             //Debug.Log("sdafdf");
             OnInteraction.Invoke();

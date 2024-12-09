@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public List<GameTask> tasks;
 
+    public static int first = 0;
     private void Awake()
     {
         pauseMenu.SetActive(false);
@@ -97,6 +98,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void LoadScene(string sceneName)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
     }
 

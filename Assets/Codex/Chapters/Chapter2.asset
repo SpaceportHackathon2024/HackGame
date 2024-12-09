@@ -12,16 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be023397539df354fa62cf49fe438203, type: 3}
   m_Name: Chapter2
   m_EditorClassIdentifier: 
-  Title: Test 2
-  Content: In cursus ex id lectus accumsan, in efficitur nibh scelerisque. Proin
-    vel ultricies ante. Aenean gravida, orci et condimentum volutpat, nulla sapien
-    eleifend arcu, in iaculis felis velit sed arcu. Duis mattis risus non sapien
-    scelerisque interdum. Aliquam eu fringilla sem. Duis luctus, quam eu bibendum
-    volutpat, nunc tellus porttitor ipsum, vitae gravida massa leo sit amet orci.
-    Ut eu facilisis sem. Suspendisse elementum leo non nisi rutrum, a ornare odio
-    elementum. Vivamus ut dictum lorem. Cras bibendum odio vulputate, laoreet sapien
-    nec, imperdiet orci. Quisque lobortis, lectus quis pharetra condimentum, lectus
-    lectus hendrerit orci, a tempus justo lacus vitae nisi. Nunc luctus leo id iaculis
-    sagittis. Morbi nec fringilla nulla.
+  Title: Rover instrumentation
+  Content: "NASA considered nearly 60 proposals for rover instrumentation. On July
+    31, 2014, NASA announced the seven instruments that would make up the payload
+    for the rover:\r\n\r\nMars Oxygen ISRU Experiment (MOXIE), an exploration technology
+    investigation to produce a small amount of oxygen (O2) from Martian atmospheric
+    carbon dioxide (CO2). On April 20, 2021, 5.37 grams of oxygen were produced in
+    an hour, with nine more extractions planned over the course of two Earth years
+    to further investigate the instrument. This technology could be scaled up in
+    the future for human life support or to make the rocket fuel for return missions.\r\nPlanetary
+    Instrument for X-Ray Lithochemistry (PIXL), an X-ray fluorescence spectrometer
+    to determine the fine scale elemental composition of Martian surface materials.\r\nRadar
+    Imager for Mars' subsurface experiment (RIMFAX), a ground-penetrating radar to
+    image different ground densities, structural layers, buried rocks, meteorites,
+    and detect underground water ice and salty brine at 10 m (33 ft) depth. The RIMFAX
+    is being provided by the Norwegian Defence Research Establishment (FFI).\r\nMars
+    Environmental Dynamics Analyzer (MEDA), a set of sensors that measure temperature,
+    wind speed and direction, pressure, relative humidity, radiation, and dust particle
+    size and shape. It is provided by Spain's Centro de Astrobiolog\xEDa.\r\nSuperCam,
+    an instrument suite that can provide imaging, chemical composition analysis,
+    and mineralogy in rocks and regolith from a distance. It is an upgraded version
+    of the ChemCam on the Curiosity rover but with two lasers and four spectrometers
+    that will allow it to remotely identify biosignatures and assess the past habitability.
+    SuperCam is used in conjunction with the AEGIS targeting system. Los Alamos National
+    Laboratory, the Research Institute in Astrophysics and Planetology (IRAP) in
+    France, the French Space Agency (CNES), the University of Hawaii, and the University
+    of Valladolid in Spain cooperated in the SuperCam's development and manufacture.\r\nMastcam-Z,
+    a stereoscopic imaging system with the ability to zoom. Many photos were included
+    in the published NASA photogallery. (Including Raw)\r\nScanning Habitable Environments
+    with Raman and Luminescence for Organics and Chemicals (SHERLOC), an ultraviolet
+    Raman spectrometer that uses fine-scale imaging and an ultraviolet (UV) laser
+    to determine fine-scale mineralogy and detect organic compounds."
   ChapterImage: {fileID: 21300000, guid: 8a90ae3d6b3573a45982f4d43f11a7a9, type: 3}
   IsUnlocked: 1
