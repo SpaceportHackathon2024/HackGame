@@ -34,7 +34,7 @@ public class PlayerInteraction : MonoBehaviour
         foreach (var collider in colliders)
         {
             Interactable interactable = collider.GetComponent<Interactable>();
-            if (interactable != null)
+            if (interactable != null && !interactable.isInteracted)
             {
                 currentInteractable = interactable;
                 break; // Stop after finding the first interactable

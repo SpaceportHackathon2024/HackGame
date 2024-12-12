@@ -21,6 +21,8 @@ public class Scanning : Interactable
 
     public override void Interact()
     {
+        if (isInteracted) return;
         gameManager.CompleteTask(taskId);
+        isInteracted = true;
     }
 }
